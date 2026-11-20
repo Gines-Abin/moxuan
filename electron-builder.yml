@@ -1,0 +1,22 @@
+appId: cn.moxuan.desktop
+productName: 墨轩 MoXuan
+copyright: Copyright © 2026 MoXuan
+directories:
+  output: release
+files:
+  - dist/**/*
+  - package.json
+asar: true
+win:
+  target:
+    - nsis
+  artifactName: MoXuan-Setup-${version}-win-x64.${ext}
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 墨轩 MoXuan
+  deleteAppDataOnUninstall: false
+  runAfterFinish: true

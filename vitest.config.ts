@@ -1,0 +1,10 @@
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
+  test: {
+    include: ['tests/**/*.test.ts'],
+    pool: 'vmThreads',
+    isolate: false,
+    environment: 'node',
+  },
+});
